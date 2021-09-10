@@ -2,9 +2,11 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
 
-
+//When a user clicks on a click event
+const heartsToBeClicked = document.querySelectorAll("span.like-glyph");
+//Add click event that invokes mimicServerCall
+heartsToBeClicked.addEventListener('click', e => mimicServerCall(e));
 
 
 //------------------------------------------------------------------------------
